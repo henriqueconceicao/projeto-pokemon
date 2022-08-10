@@ -23,7 +23,7 @@ formulario.addEventListener('submit', function(e){
     .then(function(data){
         console.log(data)
         html = 'Nome: ' + data.name + '<br>'
-        html = html + 'Type:' + data.types[0].type.name
+        html = html + 'Tipo:' + data.types[0].type.name
         resposta.innerHTML= html
 
         imagem.innerHTML = "<img src='"+ data.sprites.front_default +"'><img src='"+ data.sprites.back_default +"'>" 
